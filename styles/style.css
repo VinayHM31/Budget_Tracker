@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #71b731,#9b59b6);
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    padding: 25px;
+    border-radius: 6px;
+    border:none;
+    font-family:monospace;
+    background: #fff;
+}
+
+.container header {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    font-weight: 800;
+    color: #333;
+    position: relative;
+}
+
+header::before{
+    content: '';
+    left: 0;
+    position: absolute;
+    border-bottom: 3px solid red;
+    width: 15%;
+    bottom: -4px;
+}
+
+.container form {
+    margin-top: 30px;
+}
+
+form .field {
+    margin-bottom: 15px;
+}
+
+form .input-field {
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+
+.input-field input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0 15px;
+    border: 1px solid #d1d1d1;
+}
+
+.invalid input {
+    border-color: #d93025;
+}
+
+.field .error {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    color: #d93025;
+    font-size: 10px;
+    display: none;    
+}
+
+.invalid .error {
+    display: flex;
+}
+
+.create-password .error {
+    align-items: flex-start;
+}
+
+.button {
+    margin: px 0 6px;
+    display: inline-flex;
+}
+
+.button input {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover {
+    background-color: gray;
+}
+
+.login{
+    display: flex;
+    margin-top: 10px;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+}

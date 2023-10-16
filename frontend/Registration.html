@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>Registration</header>
+      <form id="registrationForm" method="post" action ='/register'>
+        <div class="field username-field">
+            <div class="input-field">
+                <input type="text" placeholder="Enter your firstname" class="username" required/>
+            </div>
+            <span class="error username-error">
+                <p class="error-text">Please enter valid username</p>
+            </span>
+        </div>
+
+        <div class="field lastname-field">
+          <div class="input-field">
+              <input type="text" placeholder="Enter your Lastname" class="lastname" required/>
+          </div>
+          <span class="error lastname-error">
+              <p class="error-text">Please enter valid lastname</p>
+          </span>
+      </div>
+
+        <div class="field email-field">
+          <div class="input-field">
+            <input type="email" placeholder="Enter your email" class="email" required/>
+          </div>
+          <span class="error email-error">
+            <p class="error-text">Please enter a valid email</p>
+          </span>
+        </div>
+
+        <div class="field phonenumber-field">
+          <div class="input-field">
+            <input type="number" placeholder="Enter your phone number" class="mobile_number"/>
+          </div>
+          <span class="error phonenumber-error">
+            <p class="error-text">Please enter numbers only</p>
+          </span>
+        </div>
+
+        <div class="field create-password">
+          <div class="input-field">
+            <input type="password" placeholder="Create password" class="password"/>
+          </div>
+          <span class="error password-error">
+            <p class="error-text">Please enter atleast 8 charatcer with number, symbol, small and capital letter.</p>
+          </span>
+        </div>
+
+        <div class="field confirm-password">
+          <div class="input-field">
+            <input type="password" placeholder="Confirm password" class="cPassword" />
+          </div>
+          <span class="error cPassword-error">
+            <p class="error-text">Password don't match</p>
+          </span>
+        </div>
+
+        <div class="input-field button">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+
+      <div class="login">Already have an Account? <a href="login.html">Login</a></div>
+    </div>
+   <script src="script.js"></script>
+  </body>
+</html>
